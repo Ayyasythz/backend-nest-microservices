@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5433,
+  "username": "postgres",
+  "password": "1235813",
+  "database": "auth-marketplace",
+  "entities": ["src/entities/*.ts"],
+  "migrations": ["src/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "src/migrations"
+  }
+}
