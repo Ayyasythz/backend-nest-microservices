@@ -19,7 +19,7 @@ import { Product } from './product/entities/product.entity';
       password: process.env.DATABASE_PASSWORD,
       database: process.env.DATABASE_NAME,
       entities: [Product],
-      synchronize: process.env.NODE_ENV !== 'production',
+      synchronize: true,
     }),
     ProductModule
   ],

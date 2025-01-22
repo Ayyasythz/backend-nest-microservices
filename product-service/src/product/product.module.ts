@@ -10,6 +10,7 @@ import { ProductGrpcController } from './product-grpc.controller';
     TypeOrmModule.forFeature([Product]),
   ],
   providers: [ProductService],
-  controllers: [ProductController, ProductGrpcController]
+  controllers: [ProductController, ProductGrpcController],
+  exports: [ProductService],
 })
 export class ProductModule {}
